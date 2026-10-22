@@ -1,0 +1,210 @@
+{
+  "schema_version": "1.0",
+  "repository": "Microsoft-Rebrand-Registry",
+  "identity": {
+    "description": "A static, accessible proof of concept for exploring the names and visual identities Microsoft cloud products have accumulated over time. The primary view is a research table with inline duration bars; a timeline is available as a secondary view.",
+    "default_branch": "table-timeline-poc",
+    "languages": {
+      "JavaScript": 5
+    },
+    "topics": [],
+    "licence": "",
+    "file_count": 82
+  },
+  "start_here": {
+    "readme": "README.md",
+    "agents_md": "AGENTS.md",
+    "entry_points": [],
+    "decision_records": [],
+    "build_config": [
+      "package.json"
+    ],
+    "source_roots": [
+      "src",
+      "scripts"
+    ]
+  },
+  "documentation": [
+    {
+      "path": "README.md",
+      "title": "The Rebrand Registry",
+      "lines": 73,
+      "headings": [
+        {
+          "level": 2,
+          "text": "Run locally",
+          "anchor": "run-locally"
+        },
+        {
+          "level": 2,
+          "text": "Validate and test",
+          "anchor": "validate-and-test"
+        },
+        {
+          "level": 2,
+          "text": "Data methodology",
+          "anchor": "data-methodology"
+        },
+        {
+          "level": 2,
+          "text": "Add a product",
+          "anchor": "add-a-product"
+        },
+        {
+          "level": 2,
+          "text": "Azure Static Web Apps",
+          "anchor": "azure-static-web-apps"
+        },
+        {
+          "level": 2,
+          "text": "Accessibility",
+          "anchor": "accessibility"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "source_roots": [
+      "src",
+      "scripts"
+    ],
+    "symbol_source": "repomix (tree-sitter signatures)",
+    "routes": [],
+    "files": [
+      {
+        "path": "src/app.js",
+        "symbols": [
+          {
+            "kind": "const",
+            "name": "$",
+            "parent": "",
+            "signature": "const $ = (selector)"
+          },
+          {
+            "kind": "function",
+            "name": "letterId",
+            "parent": "",
+            "signature": "function letterId(letter, view)"
+          },
+          {
+            "kind": "function",
+            "name": "renderLetterNav",
+            "parent": "",
+            "signature": "function renderLetterNav(groups)"
+          },
+          {
+            "kind": "function",
+            "name": "visibleProducts",
+            "parent": "",
+            "signature": "function visibleProducts()"
+          },
+          {
+            "kind": "function",
+            "name": "sourcesFor",
+            "parent": "",
+            "signature": "function sourcesFor(periods)"
+          },
+          {
+            "kind": "function",
+            "name": "renderPeriod",
+            "parent": "",
+            "signature": "function renderPeriod(period, max, asOf)"
+          },
+          {
+            "kind": "function",
+            "name": "renderTable",
+            "parent": "",
+            "signature": "function renderTable(groups)"
+          },
+          {
+            "kind": "function",
+            "name": "renderTimeline",
+            "parent": "",
+            "signature": "function renderTimeline(groups)"
+          },
+          {
+            "kind": "function",
+            "name": "render",
+            "parent": "",
+            "signature": "function render()"
+          },
+          {
+            "kind": "function",
+            "name": "load",
+            "parent": "",
+            "signature": "async function load()"
+          }
+        ]
+      },
+      {
+        "path": "src/dates.js",
+        "symbols": [
+          {
+            "kind": "function",
+            "name": "parseDate",
+            "parent": "",
+            "signature": "export function parseDate(value)"
+          },
+          {
+            "kind": "function",
+            "name": "monthDiff",
+            "parent": "",
+            "signature": "export function monthDiff(start, end)"
+          },
+          {
+            "kind": "function",
+            "name": "durationLabel",
+            "parent": "",
+            "signature": "export function durationLabel(months)"
+          },
+          {
+            "kind": "function",
+            "name": "currentThenChronological",
+            "parent": "",
+            "signature": "export function currentThenChronological(periods)"
+          },
+          {
+            "kind": "function",
+            "name": "productSortName",
+            "parent": "",
+            "signature": "export function productSortName(name)"
+          },
+          {
+            "kind": "function",
+            "name": "alphabeticalProducts",
+            "parent": "",
+            "signature": "export function alphabeticalProducts(groups)"
+          },
+          {
+            "kind": "function",
+            "name": "productLetter",
+            "parent": "",
+            "signature": "export function productLetter(name)"
+          },
+          {
+            "kind": "function",
+            "name": "dateLabel",
+            "parent": "",
+            "signature": "export function dateLabel(value, precision, qualifier)"
+          }
+        ]
+      }
+    ]
+  },
+  "tests": [
+    "tests/data.test.js"
+  ],
+  "operations": [],
+  "limitations": {
+    "unparsed_languages": [],
+    "excluded_dirs": [],
+    "code_map_truncated": false,
+    "code_map_symbols_capped": false,
+    "tracked_files_only": true
+  },
+  "generated": {
+    "source_commit": "67be44bf8ba7b4eaeb80892484cd452cbaf4ecac",
+    "content_hash": "6cd447474397a875",
+    "generator": "navgen"
+  }
+}
