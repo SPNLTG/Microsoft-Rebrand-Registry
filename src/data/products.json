@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-07",
+  "asOf": "2026-10-28",
   "methodology": "Dates are inclusive starts and exclusive ends. Month-only evidence is normalized to the first of that month for duration calculations while its precision remains visible.",
   "products": [
     {
@@ -621,6 +621,47 @@
           "endQualifier": null,
           "sources": [
             "copilot-studio-rename"
+          ]
+        }
+      ],
+      "logo": {
+        "src": "src/assets/logos/copilot-studio.svg",
+        "alt": "Microsoft Copilot Studio logo",
+        "source": "https://www.mscloudlogos.com"
+      }
+    },
+    {
+      "id": "copilot-harness",
+      "name": "Microsoft Copilot harness",
+      "family": "Artificial intelligence",
+      "note": "Previewed for two months with no name at all, launched as the GitHub Copilot harness, then rebadged 86 days later when Microsoft adopted it company-wide. GitHub still built it; GitHub just is not in the name anymore.",
+      "periods": [
+        {
+          "id": "copilot-harness-github",
+          "name": "GitHub Copilot harness",
+          "start": "2026-08-03",
+          "end": "2026-10-28",
+          "startPrecision": "day",
+          "endPrecision": "day",
+          "startQualifier": "generally available",
+          "endQualifier": "announced",
+          "sources": [
+            "copilot-harness-ga",
+            "copilot-harness-rename"
+          ]
+        },
+        {
+          "id": "copilot-harness-current",
+          "name": "Microsoft Copilot harness",
+          "start": "2026-10-28",
+          "end": null,
+          "startPrecision": "day",
+          "endPrecision": null,
+          "startQualifier": "announced",
+          "endQualifier": null,
+          "sources": [
+            "copilot-harness-rename",
+            "copilot-harness-announce"
           ]
         }
       ],
@@ -3899,6 +3940,27 @@
       "publisher": "Microsoft Copilot Blog",
       "published": "2023-11-15",
       "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/introducing-microsoft-copilot-studio/"
+    },
+    {
+      "id": "copilot-harness-ga",
+      "title": "More powerful agents and workflows for autonomous business processes: Introducing a new harness for Copilot Studio",
+      "publisher": "Microsoft Community Hub",
+      "published": "2026-08-03",
+      "url": "https://techcommunity.microsoft.com/blog/copilot-studio-blog/more-powerful-agents-and-workflows-for-autonomous-business-processes-introducing/4542969"
+    },
+    {
+      "id": "copilot-harness-rename",
+      "title": "The GitHub Copilot harness in Copilot Studio is now the Microsoft Copilot harness",
+      "publisher": "Microsoft Copilot Blog",
+      "published": "2026-10-28",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/the-github-copilot-harness-in-copilot-studio-is-now-the-microsoft-copilot-harness/"
+    },
+    {
+      "id": "copilot-harness-announce",
+      "title": "Introducing the Microsoft Copilot harness: Unlocking the potential of truly multi-model agentic work",
+      "publisher": "The Official Microsoft Blog",
+      "published": "2026-10-28",
+      "url": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/"
     },
     {
       "id": "cds-launch",
